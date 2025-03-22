@@ -1,4 +1,4 @@
-FROM harachin/devcontainer-base:1.0.1
+FROM harachin/devcontainer-base:1.0.2
 
 # Install sdkman
 # hadolint ignore=DL4006
