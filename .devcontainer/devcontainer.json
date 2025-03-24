@@ -1,0 +1,26 @@
+{
+  "name": "Learning Scala with PlayFramework",
+  "remoteUser": "developer",
+	"postCreateCommand": "sudo chown -R developer:developer .",
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "dockerComposeFile": [
+    "${localWorkspaceFolder}/compose.yml"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "MS-CEINTL.vscode-language-pack-ja",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "exiasr.hadolint",
+        "ms-azuretools.vscode-docker",
+        "scalameta.metals",
+        "scala-lang.scala"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  }
+}

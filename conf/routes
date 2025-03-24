@@ -1,0 +1,4 @@
+# Routes
+
+# Home(/*)
+GET / com.harachin.controllers.HomeController.root()

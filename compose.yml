@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile.devcontainer
+    tty: true
+    volumes:
+      - .:/workspace
+    ports:
+      - "9000:9000"
+
+  api:
+    build:
+      context: .
+    tty: true
+    volumes:
+      - .:/api
+    depends_on:
+      - database
+
+  database:
+    image: mysql:8.4.4
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: appdb
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

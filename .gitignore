@@ -1,0 +1,20 @@
+# Project specific
+logs/
+
+# Simple build tool(sbt)
+/target/
+/project/**/target/
+/test/macro-annot/target/
+/test/files/target/
+/test/target/
+/build-sbt/
+local.sbt
+jitwatch.out
+
+# Metals
+.metals
+.bloop
+project/**/metals.sbt
+
+.bsp
+.history
