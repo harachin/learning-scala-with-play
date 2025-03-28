@@ -1,10 +1,8 @@
 package com.harachin.controllers
 
-import com.harachin.controllers.BaseController
-
 import javax.inject.{Inject, Singleton}
 import play.api.libs.json.Json
-import play.api.mvc.{Action, AnyContent, ControllerComponents, Request}
+import play.api.mvc.{AnyContent, ControllerComponents, Request}
 
 @Singleton
 class HomeController @Inject() (val controllerComponents: ControllerComponents) extends BaseController {

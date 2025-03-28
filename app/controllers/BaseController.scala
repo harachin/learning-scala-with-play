@@ -2,8 +2,6 @@ package com.harachin.controllers
 
 import play.api.libs.json.{JsObject, Json}
 import play.api.mvc.BaseController as PlayBaseController
-import play.api.mvc.ControllerComponents
-import play.api.mvc.Result
 
 trait BaseController extends PlayBaseController {
 

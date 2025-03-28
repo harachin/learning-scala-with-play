@@ -27,6 +27,22 @@ TODO
 
 TODO
 
-### Test
+### Run test
 
-TODO
+```
+sbt test
+```
+
+### Run lint & formatter
+
+Auto fix:
+```
+sbt scalafmtAll
+sbt scalafixAll
+```
+
+Only check:
+```
+sbt scalafmtCheckAll
+sbt scalafixAll --check
+```
