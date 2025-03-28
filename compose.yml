@@ -11,6 +11,16 @@ services:
     ports:
       - "9000:9000"
 
+  web:
+    image: harachin/learning-api-nginx:1.0.1
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    depends_on:
+      - api
+      - database
+
   api:
     build:
       context: .
