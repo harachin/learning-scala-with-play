@@ -1,7 +1,7 @@
 {
   "name": "Learning Scala with PlayFramework",
   "remoteUser": "developer",
-	"postCreateCommand": "sudo chown -R developer:developer .",
+  "postCreateCommand": "sudo chown -R developer:developer .",
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
   "dockerComposeFile": [
@@ -21,6 +21,11 @@
       "settings": {
         "terminal.integrated.defaultProfile.linux": "bash"
       }
+    }
+  },
+  "features": {
+    "docker-from-docker": {
+      "version": "28.0.4"
     }
   }
 }

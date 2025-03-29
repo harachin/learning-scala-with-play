@@ -6,7 +6,7 @@ RUN curl -s "https://get.sdkman.io" | /bin/bash
 
 # Install OpenJDK21, Scala 3.6.4, sbt 1.10.11
 RUN bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && \
-                sdk install java 21.0.6-ms && \
-                sdk install scala 3.0.2 && \
-                sdk install sbt 1.5.5 \
-            "
+    sdk install java 21.0.6-ms && \
+    sdk install scala 3.0.2 && \
+    sdk install sbt 1.5.5 \
+    "
